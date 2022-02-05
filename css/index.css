@@ -197,12 +197,6 @@
     height: 4vw;
 }
 
-.etherscan {
-    border: .3vw black solid;
-    border-radius: 50%;
-    background-color: white;
-}
-
 
 @media screen and (max-width: 991px) {
     /* start header-navbar styling */
@@ -342,10 +336,6 @@
     #bottom-socials a {
         width: 7vh;
         height: 7vh;
-    }
-
-    #etherscan {
-        border: .5vh black solid;
     }
 
 }
