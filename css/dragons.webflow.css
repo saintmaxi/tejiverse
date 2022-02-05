@@ -133,7 +133,6 @@ p {
 	font-size: 33px;
 	line-height: 33px;
 	text-align: left;
-	font-family: 'Pixel';
 }
 
 .hide-on-desktop {
@@ -269,14 +268,12 @@ p {
 }
 
 .message-text {
-	font-family: 'Retro', sans-serif;
 	font-size: 20px;
 	line-height: 25px;
 	text-align: center
 }
 
 .banner-text {
-	font-family: 'Retro', sans-serif;
 	color: white;
 	font-size: 50px;
 	text-align: center;
