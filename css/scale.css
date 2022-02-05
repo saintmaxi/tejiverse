@@ -1,0 +1,300 @@
+
+h1, h2 {
+    margin-top: 0;
+}
+
+#account {
+    position: absolute;
+    display: inline;
+    text-align: center;
+    top: 19px;
+    right: 17px;
+}
+
+button {
+    font-size: 1vw !important;
+}
+
+#top {
+    padding-bottom: 5px !important;
+}
+
+#scale-description {
+    margin:auto;
+    text-align: center;
+    font-family: 'Pixel';
+    width: 65%;
+    font-size: 1.4vw !important;
+    line-height: 1.6vw !important;
+}
+
+h2 {
+    font-size: 1.5vw;
+}
+
+#scale-balances {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.scale-balance-container {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 39vw;
+}
+
+.scale-balance-container button {
+    width: 75%;
+}    
+
+#your-scale-container {
+    margin-right: 2vw;
+}
+
+#your-dragon-section {
+    width:80vw;
+    margin: auto;
+    text-align: center;
+    min-height:40vh;
+}
+
+#available-dragon-images, #available-elder-images, #available-baby-images {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#genesis-label {
+    margin-bottom: 1vw;
+}
+
+#elder-label, #baby-label {
+    margin: 2vw;
+}
+
+.your-dragon {
+    width: 17%;
+    font-size: 1.3vw;
+    margin: 10px;
+}
+
+.your-dragon img {
+    margin: 5px;
+}
+
+.dragon-id {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.hide-on-desktop {
+    display: none !important;
+}
+
+.one {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.0s;
+  }
+  
+  .two {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.2s;
+  }
+  
+  .three {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.3s;
+  }
+  
+  @-webkit-keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+@media screen and (max-width: 991px) {
+
+    #genesis-label, #elder-label, #baby-label {
+        font-size: 1.9vh !important;
+        line-height: 2.7vh !important;
+    }
+
+    .no-dragons-msg {
+        font-size: 1.5vh !important;
+    }
+
+    .hide-on-desktop {
+        display: block !important;
+    }
+    
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    #mobile-account {
+        width:80%;
+        margin-top: 10px;
+    }
+
+    #scale-description {
+        margin:auto;
+        text-align: center;
+        width: 95%;
+        font-size: 2.5vh !important;
+        line-height: 2.9vh !important;
+    }
+
+    h2 {
+        font-size: 2.7vh !important;
+        line-height: 2.7vh !important; 
+    }
+
+    button {
+        font-size: 1.7vh !important;
+        line-height: 1.7vh !important;
+    }
+
+    .scale-balance-container {
+        width: 95vw;
+    }
+
+    .scale-balance-container h2 {
+        font-size: 3vh;
+    }    
+
+    .scale-balance-container button {
+        width: 95%;
+        font-size: 2.5vh;
+        padding: 20px;
+    }    
+
+    #your-scale-container {
+        margin-right: initial;
+    }
+
+    #your-dragon-section {
+        width:95vw;
+        min-height: 0;
+        margin: auto;
+    }
+
+    #available-dragon-images, #available-elder-images, #available-baby-images {
+        width: 100%;
+        text-align: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .box3 {
+        padding: 20px;
+    }
+
+    .your-dragon {
+        width: 41%;
+    }
+
+    #pending-transactions {
+        min-width: 85%;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    
+      .loading-div {
+        font-size: 4vw;
+        line-height: 4vw;
+      }
+
+    #error-popup, #status-popup {
+        width: 75vw;
+        height: 15vh;
+    }
+
+    #error-popup p, #status-popup p {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+}

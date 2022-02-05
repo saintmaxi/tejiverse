@@ -1,0 +1,566 @@
+
+h1, h2 {
+    margin-top: 0;
+}
+
+#account {
+    position: absolute;
+    display: inline;
+    text-align: center;
+    top: 19px;
+    right: 17px;
+}
+
+button {
+    font-size: 1vw !important;
+}
+
+#top {
+    padding-bottom: 5px !important;
+}
+
+#breed-description, #breed-description-2 {
+    margin:auto;
+    text-align: center;
+    font-family: 'Pixel';
+    width: 65%;
+    font-size: 1.4vw !important;
+    line-height: 1.6vw !important;
+}
+
+#breed-description-2 {
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+}
+
+h2 {
+    font-size: 1.5vw;
+}
+
+#breed-controls h2 {
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+}
+
+#scale-balances {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.scale-balance-container {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 39vw;
+}
+
+.scale-balance-container button {
+    width: 75%;
+}    
+
+#your-scale-container {
+    margin-right: 2vw;
+}
+
+#your-dragon-section, #your-baby-dragon-section, #your-elder-dragon-section{
+    width:80vw;
+    margin: auto;
+    text-align: center;
+    min-height:40vh;
+}
+
+#available-dragon-images, #available-elder-images, #available-baby-images {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#genesis-label {
+    margin-bottom: 1vw;
+}
+
+#elder-label, #baby-label {
+    margin: 2vw;
+    text-align: center;
+}
+
+.your-dragon {
+    width: 17%;
+    font-size: 1.3vw;
+    margin: 10px;
+}
+
+.your-dragon img {
+    margin: 5px;
+}
+
+.dragon-id {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.hide-on-desktop {
+    display: none !important;
+}
+
+.one {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.0s;
+  }
+  
+  .two {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.2s;
+  }
+  
+  .three {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.3s;
+  }
+  
+  @-webkit-keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+
+/*breed stuff*/
+
+#your-dragon-section {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#tributes {
+    width: 60%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#select-tributes-button, #burn-button {
+    width: 82%;
+}
+
+#breed-controls {
+    width: 40%;
+}
+
+.tribute {
+    width: 25% !important;
+    margin: 1%;
+    text-align: center;
+}
+
+.tribute h2 {
+    margin-top: 10px;
+}
+  
+.tribute img {
+    border: solid 5px white;
+    width: 100%;
+    height: 100%;
+}
+
+.selected {
+    color: red;
+}
+
+.selected img {
+    border: solid 5px red !important;
+}
+
+#dragon-select {
+	background-color: rgba(95, 92, 92);
+    border: .2em solid white;
+    z-index: 10000;
+    color:white;
+    position:fixed;
+    top:5vh;
+    left: 50%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    transform: translate(-50%, 0);
+    width: 90vw;
+    height: 85vh;
+    box-shadow: 0 0 5000px 5000px rgba(0,0,0,0.88);
+  }
+
+  #available-dragons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-height: 70%;
+    padding-bottom: 1%;
+    overflow-y: scroll;
+  }
+
+  #dragon-select #close {
+    padding: 1.1vw;
+  }
+
+  .dragon-div {
+    cursor: pointer !important;
+    width: 17% !important;
+    margin: 1%;
+    text-align: center;
+  }
+
+  .dragon-div h2 {
+    margin-top: 10px;
+  }
+  
+  .dragon-div:hover {
+    cursor: pointer !important;
+  }
+  
+  .dragon-div img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #close-div {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: black;
+  }
+
+
+#close {
+    position: absolute;
+    padding: 2vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: right;
+    cursor: pointer;
+    font-size: 3vw;
+    color: red;
+    z-index: 10001;
+  }
+
+  #selected-dragons-big {
+    width: 100%;
+    text-align: center;
+    font-size: 1.7vw;
+    line-height: 1.7vw;
+  }
+
+  #bottom-div {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+	background-color: black;
+    border-top: solid .2em white;
+    font-size: 2vw;
+    text-align: center;
+    padding: 20px;
+    padding: 1%;
+    height:20%;
+  }
+
+  #confirm {
+    width: 15%;
+    padding: 5px;
+    font-size: 1.5vw;
+    height:40%;
+  }
+
+  #dragon-select h1 {
+    line-height: 2.3vh;
+    margin:0;
+    padding: 1vw;
+    }
+
+@media screen and (max-width: 991px) {
+
+    #dragon-select h1 {
+        padding-top: 2.5vh;
+    }
+
+    .tribute {
+        width: 28% !important;
+        margin: 2%;
+        text-align: center;
+    }
+
+    #select-tributes-button, #burn-button {
+        width: 93%;
+        padding: 20px;
+    }
+
+    #tributes, #breed-controls {
+        width: 100%;
+    }
+
+    #tributes {
+        margin-bottom: 20px;
+    }
+
+    #confirm {
+        width: 100%;
+        padding: 10px;
+        font-size: 3vh;
+      }
+
+    #selected-dragons-big {
+        width: 100%;
+        position: sticky;
+        bottom: 0;
+        border-top: none;
+        font-size: 2vh;
+        padding: 10px;
+    }
+
+    #bottom-div {
+        height: 15%;
+    }
+
+    .dragon-div {
+        width: 40% !important;
+        margin: 2.5%;
+      }
+
+      #close {
+        padding: 2vh;
+        font-size: 4vh;
+      }
+
+    #genesis-label, #elder-label, #baby-label {
+        font-size: 1.9vh !important;
+        line-height: 2.7vh !important;
+    }
+
+    .no-dragons-msg {
+        font-size: 1.5vh !important;
+    }
+
+    .hide-on-desktop {
+        display: block !important;
+    }
+    
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    #mobile-account {
+        width:80%;
+        margin-top: 10px;
+    }
+
+    #breed-description, #breed-description-2 {
+        margin:auto;
+        text-align: center;
+        width: 95%;
+        font-size: 2.5vh !important;
+        line-height: 2.9vh !important;
+    }
+
+    h2 {
+        font-size: 2.7vh !important;
+        line-height: 2.7vh !important; 
+    }
+
+    #breed-controls h2 {
+        font-size: 2.3vh !important;
+        line-height: 2.3vh !important; 
+    }
+
+    button {
+        font-size: 1.7vh !important;
+        line-height: 1.7vh !important;
+    }
+
+    .scale-balance-container {
+        width: 95vw;
+    }
+
+    .scale-balance-container h2 {
+        font-size: 3vh;
+    }    
+
+    .scale-balance-container button {
+        width: 95%;
+        font-size: 2.5vh;
+    }    
+
+    #your-scale-container {
+        margin-right: initial;
+    }
+
+    #your-dragon-section, #your-baby-dragon-section, #your-elder-dragon-section {
+        width:95vw;
+        min-height: 0;
+        margin: auto;
+    }
+
+    #available-dragon-images, #available-elder-images, #available-baby-images {
+        width: 100%;
+        text-align: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .box3 {
+        padding: 20px;
+    }
+
+    .your-dragon {
+        width: 41%;
+    }
+
+    #pending-transactions {
+        min-width: 85%;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    
+      .loading-div {
+        font-size: 4vw;
+        line-height: 4vw;
+      }
+
+    #error-popup, #status-popup {
+        width: 75vw;
+        height: 15vh;
+    }
+
+    #error-popup p, #status-popup p {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+}

@@ -1,0 +1,201 @@
+.modal-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+.blinking {
+    animation: blinker 1.6s linear infinite;
+}
+
+
+.one {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.0s;
+  }
+  
+  .two {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.2s;
+  }
+  
+  .three {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.3s;
+  }
+  
+  @-webkit-keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+/* start minting styling */
+
+#mint-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+#mint {
+    margin: 0;
+    width: 45%;
+}
+
+#quantity-controls {
+    text-align: center;
+}
+
+#max-button {
+    width:25%;
+}
+
+#mint-button, #mint-n-stake-button {
+	height: 4vw;
+    width: 98%;
+    margin-bottom: 2%;
+}
+
+#mint button {
+    font-size: 2vw;
+    letter-spacing: 5px;
+}
+
+.hidden {
+    display: none;
+}
+  
+.increment-button {
+    width: 15%;
+    font-size: calc(25px + 3vw) !important;
+    line-height: calc(25px + 3vw) !important;
+    background-color: transparent;
+}
+
+.increment-button:hover {
+    color: lightgrey
+}
+
+  
+#number-to-mint {
+    font-size: calc(20px + 3vw) !important;
+    line-height: calc(20px + 3vw) !important;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+  
+#mint-prompt {
+    width: 100%;
+    text-align: center;
+}
+  
+#mint-tools {
+    width: 100%;
+}
+
+/* end minting styling */
+
+@media screen and (max-width: 767px) {
+
+    /* start minting styling */
+
+    #mint-container {
+        height: initial;
+    }
+
+    #mint {
+        width: 90%;
+    }
+
+    #mint-header {
+      font-size: calc(25px + 2vw) !important;
+      line-height: calc(25px + 2vw) !important;
+    }
+    
+    .mint-info {
+      font-size: calc(25px + 1vw);
+      line-height: calc(25px + 1vw);
+      margin-bottom: 0;
+    }
+
+    #quantity-controls {
+        margin-bottom: 0;
+        width: 100%;
+    }
+    
+    #mint button {
+        font-size: 3vh;
+        letter-spacing: 5px;
+    }
+    
+    #max-button {
+        min-height: 40px;
+        min-width: 150px;
+    }
+
+    #mint-button, #mint-n-stake-button {
+        height: 7vh;
+        width: 98%;
+        margin-bottom: 5%;
+    }
+    
+    .increment-button {
+      touch-action: manipulation;
+      width: initial;
+      font-size: calc(20px + 4.5vw) !important;
+      line-height: calc(20px + 3.5vw) !important;
+      background-color: transparent;
+    }
+    
+    #number-to-mint {
+      font-size: calc(25px + 3.5vw) !important;
+      line-height: calc(25px + 3.5vw) !important;
+    }
+
+    #sold-out {
+        font-size: 3vh;
+        line-height: 3vh;
+    }
+
+    /* end minting styling */
+
+}
