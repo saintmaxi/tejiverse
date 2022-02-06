@@ -168,12 +168,12 @@
     }
     
     #max-button {
-        min-height: 40px;
+        min-height: 10vh;
         min-width: 150px;
     }
 
     #mint-button, #mint-n-stake-button {
-        height: 7vh;
+        height: 10vh;
         width: 98%;
         margin-bottom: 5%;
     }
