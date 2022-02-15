@@ -4,12 +4,12 @@
 
 const tejiAddress = "";
 const tejiAbi = () => {
-    return ``;
+    return `[ "constructor(string,address)", "event Approval(address indexed,address indexed,uint256 indexed)", "event ApprovalForAll(address indexed,address indexed,bool)", "event OwnershipTransferred(address indexed,address indexed)", "event Transfer(address indexed,address indexed,uint256 indexed)", "function TEJI_MAX() view returns (uint256)", "function TEJI_PER_TX() view returns (uint256)", "function approve(address,uint256)", "function balanceOf(address) view returns (uint256)", "function baseURI() view returns (string)", "function claim(uint256)", "function claimWhitelist(uint256,bytes)", "function getApproved(uint256) view returns (address)", "function isApprovedForAll(address,address) view returns (bool)", "function looksrare() view returns (address)", "function marketplacesApproved() view returns (bool)", "function name() view returns (string)", "function opensea() view returns (address)", "function owner() view returns (address)", "function ownerOf(uint256) view returns (address)", "function renounceOwnership()", "function safeTransferFrom(address,address,uint256)", "function safeTransferFrom(address,address,uint256,bytes)", "function saleState() view returns (uint256)", "function setApprovalForAll(address,bool)", "function setBaseURI(string)", "function setMarketplaces(address,address)", "function setSaleState(uint256)", "function setSigner(address)", "function setUnrevealedURI(string)", "function signer() view returns (address)", "function supportsInterface(bytes4) view returns (bool)", "function symbol() view returns (string)", "function toggleMarketplacesApproved()", "function tokenByIndex(uint256) view returns (uint256)", "function tokenOfOwnerByIndex(address,uint256) view returns (uint256)", "function tokenURI(uint256) view returns (string)", "function totalSupply() view returns (uint256)", "function transferFrom(address,address,uint256)", "function transferOwnership(address)", "function unrevealedURI() view returns (string)", "function walletOfOwner(address) view returns (uint256[])" ]`;
 };
 
 const etherscanBase = `https://etherscan.io/tx/`;
 const correctChain = 1;
-const MAX_MINT = 5;
+const MAX_MINT = 3;
 const MAX_SUPPLY = 1000;
 const openseaLink = "";
 const looksrareLink = "";
@@ -25,7 +25,7 @@ const looksrareLink = "";
 
 // const etherscanBase = `https://rinkeby.etherscan.io/tx/`;
 // const correctChain = 4;
-// const MAX_MINT = 5;
+// const MAX_MINT = 3;
 // const MAX_SUPPLY = 1000;
 // const openseaLink = "";
 // const looksrareLink = "";

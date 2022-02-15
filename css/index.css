@@ -197,6 +197,18 @@
     height: 4vw;
 }
 
+#copyright-div {
+    background-color: var(--main-bg-color);
+    border-top: .5vw solid black;
+    text-align: center;
+    font-size: 1.4vw !important;
+	line-height: 1.7vw !important;
+    padding: 5px;
+}
+
+#copyright-div img {
+    margin-right: 20px;
+}
 
 @media screen and (max-width: 991px) {
     /* start header-navbar styling */
@@ -338,4 +350,14 @@
         height: 7vh;
     }
 
+    #copyright-div {
+        border-width: 5px;
+        padding: 3px;
+        font-size: 2.8vh !important;
+		line-height: 3.1vh !important;
+    }
+
+    #copyright-div img {
+        margin: 8px;
+    }
 }

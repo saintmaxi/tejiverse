@@ -4,6 +4,11 @@
 }  
 
 @font-face {  
+	font-family: 'Helvetica';
+	src: URL('../css/Helvetica.ttf') format('truetype');
+}  
+
+@font-face {  
 	font-family: 'Block';
 	src: URL('../css/upheavtt.ttf') format('truetype');
 }  
@@ -35,7 +40,8 @@ h1 {
 }
 
 p {
-	font-family: "Courier New";
+	/* font-family: "Courier New"; */
+	font-family: "Helvetica";
 	text-align: justify;
 	font-weight: bold;
 	font-size: 1.4vw !important;
