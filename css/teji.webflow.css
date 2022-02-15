@@ -40,8 +40,8 @@ h1 {
 }
 
 p {
-	/* font-family: "Courier New"; */
-	font-family: "Helvetica";
+	font-family: "Courier New";
+	/* font-family: "Helvetica"; */
 	text-align: justify;
 	font-weight: bold;
 	font-size: 1.4vw !important;
