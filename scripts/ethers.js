@@ -9,7 +9,7 @@
 
 // const etherscanBase = `https://etherscan.io/tx/`;
 // const correctChain = 1;
-// const MAX_MINT = 3;
+// const MAX_MINT = 1;
 // const MAX_SUPPLY = 1000;
 // const openseaLink = "";
 // const looksrareLink = "";
@@ -25,7 +25,7 @@ const tejiAbi = () => {
 
 const etherscanBase = `https://rinkeby.etherscan.io/tx/`;
 const correctChain = 4;
-const MAX_MINT = 3;
+const MAX_MINT = 1;
 const MAX_SUPPLY = 1000;
 const openseaLink = "";
 const looksrareLink = "";
@@ -140,7 +140,7 @@ const mint = async() => {
     const numberToMint = Number($("#number-to-mint").text());
 
     if (numberToMint > MAX_MINT) {
-        await displayErrorMessage(`Max ${MAX_MINT} mints per transaction!`);
+        await displayErrorMessage(`Max ${MAX_MINT} mint per wallet!`);
     }
 
     try {
@@ -159,7 +159,7 @@ const mint = async() => {
                 await displayErrorMessage("You are not whitelisted!");
             }
             else if (numberToMint > MAX_MINT) {
-                await displayErrorMessage(`Max ${MAX_MINT} mints for WL!`);
+                await displayErrorMessage(`Max ${MAX_MINT} mint per wallet!`);
             }
             else {
                 const signature = await getSignature(await getAddress(), numberToMint);
@@ -183,7 +183,7 @@ const mint = async() => {
     }
     catch (error) {
         if ((error.message).includes("Tejiverse: invalid claim amount")) {
-            await displayErrorMessage(`Error: Max ${MAX_MINT} mints!`)
+            await displayErrorMessage(`Error: Max ${MAX_MINT} mint per wallet!`)
         }
         else if ((error.message).includes("Tejiverse: invalid signature")) {
             await displayErrorMessage(`Error: You are not whitelisted!`)
