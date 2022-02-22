@@ -118,10 +118,15 @@ const checkWhitelistStatus = async() => {
     const whitelistLive = await isWhitelistOnly();
 
     if (whitelistLive) {
-        // const signature = await getSignature(); //how check WL, just load list as set and see if contains?
         const addr = await getAddress();
-        // const _isWhitelisted = await tejis.isWhitelisted(addr, signature).catch(err => console.log(err));
-        const _isWhitelisted = true;
+        const signature = await getSignature(addr, 1); //how check WL, just load list as set and see if contains?
+        let _isWhitelisted;
+        if (signature.includes("Not in whitelist")) {
+            _isWhitelisted = false;
+        }
+        else {
+            _isWhitelisted = true;
+        }
         if (!publicIsLive) {
             $("#whitelisted").html(_isWhitelisted ? "Congrats, you made the whitelist!" : "Sorry, you are not whitelisted. Please wait for our public sale.");
         }
@@ -153,23 +158,23 @@ const mint = async() => {
             if (!whitelisted){
                 await displayErrorMessage("You are not whitelisted!");
             }
-
-            if (numberToMint > MAX_MINT) {
+            else if (numberToMint > MAX_MINT) {
                 await displayErrorMessage(`Max ${MAX_MINT} mints for WL!`);
             }
-    
-            const signature = await getSignature(await getAddress(), numberToMint);
-
-            if (signature.includes("Invalid") || signature.includes("Not in whitelist")) {
-                await displayErrorMessage(`Error: Invalid API response: ${signature}`);
-            }
             else {
-                const gasLimit = await tejis.estimateGas.claimWhitelist(numberToMint, signature);
-                const newGasLimit = parseInt((gasLimit * 1.2)).toString();
-                
-                await tejis.claimWhitelist(numberToMint, signature, {gasLimit: newGasLimit}).then( async(tx_) => {
-                    await waitForTransaction(tx_);
-                });
+                const signature = await getSignature(await getAddress(), numberToMint);
+
+                if (signature.includes("Invalid") || signature.includes("Not in whitelist")) {
+                    await displayErrorMessage(`Error: Invalid API response: ${signature}`);
+                }
+                else {
+                    const gasLimit = await tejis.estimateGas.claimWhitelist(numberToMint, signature);
+                    const newGasLimit = parseInt((gasLimit * 1.2)).toString();
+                    
+                    await tejis.claimWhitelist(numberToMint, signature, {gasLimit: newGasLimit}).then( async(tx_) => {
+                        await waitForTransaction(tx_);
+                    });
+                }
             }
         }
         else {
