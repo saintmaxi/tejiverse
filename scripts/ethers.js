@@ -18,7 +18,7 @@
 /***********************************DEV CONFIG************************************/
 /*********************************************************************************/
 
-const tejiAddress = "0x5dda040C5218f32af03CC2fdC1AFC37B999c7fd7";
+const tejiAddress = "0xAC12e7B63b58555E16bDa948817193E3b53a4621";
 const tejiAbi = () => {
     return `[ "constructor(string,address)", "event Approval(address indexed,address indexed,uint256 indexed)", "event ApprovalForAll(address indexed,address indexed,bool)", "event OwnershipTransferred(address indexed,address indexed)", "event Transfer(address indexed,address indexed,uint256 indexed)", "function TEJI_MAX() view returns (uint256)", "function approve(address,uint256)", "function balanceOf(address) view returns (uint256)", "function baseURI() view returns (string)", "function claim()", "function claimWhitelist(bytes)", "function getApproved(uint256) view returns (address)", "function isApprovedForAll(address,address) view returns (bool)", "function looksrare() view returns (address)", "function marketplacesApproved() view returns (bool)", "function name() view returns (string)", "function opensea() view returns (address)", "function owner() view returns (address)", "function ownerOf(uint256) view returns (address)", "function renounceOwnership()", "function safeTransferFrom(address,address,uint256)", "function safeTransferFrom(address,address,uint256,bytes)", "function saleState() view returns (uint256)", "function setApprovalForAll(address,bool)", "function setBaseURI(string)", "function setMarketplaces(address,address)", "function setSaleState(uint256)", "function setSigner(address)", "function setUnrevealedURI(string)", "function signer() view returns (address)", "function supportsInterface(bytes4) view returns (bool)", "function symbol() view returns (string)", "function toggleMarketplacesApproved()", "function tokenByIndex(uint256) view returns (uint256)", "function tokenOfOwnerByIndex(address,uint256) view returns (uint256)", "function tokenURI(uint256) view returns (string)", "function totalSupply() view returns (uint256)", "function transferFrom(address,address,uint256)", "function transferOwnership(address)", "function unrevealedURI() view returns (string)", "function walletOfOwner(address) view returns (uint256[])" ]`;
 };
@@ -81,14 +81,14 @@ const checkMintingLive = async() => {
     const whitelistLive = await isWhitelistOnly();
     const publicLive = await isPublic();
     if (!whitelistLive && !publicLive) {
-        $("#mint-tools").addClass("hidden");
+        $("#mint-buttons").addClass("hidden");
         $("#mint-closed").removeClass("hidden");
     }
     else {
         if (publicLive && whitelistLive) {
             $("#whitelisted").html('');
         }
-        $("#mint-tools").removeClass("hidden");
+        $("#mint-buttons").removeClass("hidden");
         $("#mint-closed").addClass("hidden");
     }
 }
