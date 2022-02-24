@@ -20,7 +20,7 @@
 
 const tejiAddress = "0x5dda040C5218f32af03CC2fdC1AFC37B999c7fd7";
 const tejiAbi = () => {
-    return `[{"inputs":[{"internalType":"string","name":"newUnrevealedURI","type":"string"},{"internalType":"address","name":"newSigner","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"approved","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"operator","type":"address"},{"indexed":false,"internalType":"bool","name":"approved","type":"bool"}],"name":"ApprovalForAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"TEJI_MAX","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"TEJI_PER_TX","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"to_","type":"address"},{"internalType":"uint256","name":"tokenId_","type":"uint256"}],"name":"approve","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account_","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"baseURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"claim","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"bytes","name":"signature","type":"bytes"}],"name":"claimWhitelist","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId_","type":"uint256"}],"name":"getApproved","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"operator","type":"address"}],"name":"isApprovedForAll","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"looksrare","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"marketplacesApproved","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"opensea","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId_","type":"uint256"}],"name":"ownerOf","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from_","type":"address"},{"internalType":"address","name":"to_","type":"address"},{"internalType":"uint256","name":"tokenId_","type":"uint256"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from_","type":"address"},{"internalType":"address","name":"to_","type":"address"},{"internalType":"uint256","name":"tokenId_","type":"uint256"},{"internalType":"bytes","name":"data_","type":"bytes"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"saleState","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"operator_","type":"address"},{"internalType":"bool","name":"approved_","type":"bool"}],"name":"setApprovalForAll","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"newBaseURI","type":"string"}],"name":"setBaseURI","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOpensea","type":"address"},{"internalType":"address","name":"newLooksrare","type":"address"}],"name":"setMarketplaces","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"newSaleState","type":"uint256"}],"name":"setSaleState","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newSigner","type":"address"}],"name":"setSigner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"newUnrevealedURI","type":"string"}],"name":"setUnrevealedURI","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"signer","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId_","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"toggleMarketplacesApproved","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"index_","type":"uint256"}],"name":"tokenByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"account_","type":"address"},{"internalType":"uint256","name":"index_","type":"uint256"}],"name":"tokenOfOwnerByIndex","outputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"id","type":"uint256"}],"name":"tokenURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from_","type":"address"},{"internalType":"address","name":"to_","type":"address"},{"internalType":"uint256","name":"tokenId_","type":"uint256"}],"name":"transferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"unrevealedURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"account_","type":"address"}],"name":"walletOfOwner","outputs":[{"internalType":"uint256[]","name":"","type":"uint256[]"}],"stateMutability":"view","type":"function"}]`;
+    return `[ "constructor(string,address)", "event Approval(address indexed,address indexed,uint256 indexed)", "event ApprovalForAll(address indexed,address indexed,bool)", "event OwnershipTransferred(address indexed,address indexed)", "event Transfer(address indexed,address indexed,uint256 indexed)", "function TEJI_MAX() view returns (uint256)", "function approve(address,uint256)", "function balanceOf(address) view returns (uint256)", "function baseURI() view returns (string)", "function claim()", "function claimWhitelist(bytes)", "function getApproved(uint256) view returns (address)", "function isApprovedForAll(address,address) view returns (bool)", "function looksrare() view returns (address)", "function marketplacesApproved() view returns (bool)", "function name() view returns (string)", "function opensea() view returns (address)", "function owner() view returns (address)", "function ownerOf(uint256) view returns (address)", "function renounceOwnership()", "function safeTransferFrom(address,address,uint256)", "function safeTransferFrom(address,address,uint256,bytes)", "function saleState() view returns (uint256)", "function setApprovalForAll(address,bool)", "function setBaseURI(string)", "function setMarketplaces(address,address)", "function setSaleState(uint256)", "function setSigner(address)", "function setUnrevealedURI(string)", "function signer() view returns (address)", "function supportsInterface(bytes4) view returns (bool)", "function symbol() view returns (string)", "function toggleMarketplacesApproved()", "function tokenByIndex(uint256) view returns (uint256)", "function tokenOfOwnerByIndex(address,uint256) view returns (uint256)", "function tokenURI(uint256) view returns (string)", "function totalSupply() view returns (uint256)", "function transferFrom(address,address,uint256)", "function transferOwnership(address)", "function unrevealedURI() view returns (string)", "function walletOfOwner(address) view returns (uint256[])" ]`;
 };
 
 const etherscanBase = `https://rinkeby.etherscan.io/tx/`;
@@ -41,7 +41,6 @@ var publicIsLive;
 
 const connect = async()=>{
     await provider.send("eth_requestAccounts", []);
-    // await revealMintPrompt();
 };
 
 const getAddress = async()=>{
@@ -60,28 +59,8 @@ const getChainId = async()=>{
     return await signer.getChainId()
 };
 
-function decrementClaim() {
-    let currentClaim = Number($("#number-to-mint").text());
-    if (currentClaim > 1) {
-        let newClaim = currentClaim - 1;
-        $("#number-to-mint").text(newClaim);
-    }
-}
-
-function incrementClaim() {
-    let currentClaim = Number($("#number-to-mint").text());
-    if (currentClaim != MAX_MINT) {
-        let newClaim = currentClaim + 1;
-        $("#number-to-mint").text(newClaim);
-    }
-}
-
-const setMaxMint = async() => {
-    $("#number-to-mint").text(MAX_MINT);
-}
-
-const getSignature = async(account, amount) => {
-    const response = await fetch(`https://tejiverse.xyz/.netlify/functions/sign?addr=${account}&amount=${amount}`);
+const getSignature = async(account) => {
+    const response = await fetch(`https://tejiverse.xyz/.netlify/functions/sign?addr=${account}`);
     const text = await response.text();
     return text;
   }
@@ -119,7 +98,7 @@ const checkWhitelistStatus = async() => {
 
     if (whitelistLive) {
         const addr = await getAddress();
-        const signature = await getSignature(addr, 1); //how check WL, just load list as set and see if contains?
+        const signature = await getSignature(addr); //how check WL, just load list as set and see if contains?
         let _isWhitelisted;
         if (signature.includes("Not in whitelist")) {
             _isWhitelisted = false;
@@ -137,19 +116,14 @@ const checkWhitelistStatus = async() => {
 const mint = async() => {
     const whitelistLive = await isWhitelistOnly();
     const publicLive = await isPublic();
-    const numberToMint = Number($("#number-to-mint").text());
-
-    if (numberToMint > MAX_MINT) {
-        await displayErrorMessage(`Max ${MAX_MINT} mint per wallet!`);
-    }
 
     try {
         if (publicLive) {
 
-            const gasLimit = await tejis.estimateGas.claim(numberToMint)
+            const gasLimit = await tejis.estimateGas.claim();
             const newGasLimit = parseInt((gasLimit * 1.2)).toString();
         
-            await tejis.claim(numberToMint, {gasLimit: newGasLimit}).then( async(tx_) => {
+            await tejis.claim({gasLimit: newGasLimit}).then( async(tx_) => {
                 await waitForTransaction(tx_);
             });   
         }
@@ -158,20 +132,17 @@ const mint = async() => {
             if (!whitelisted){
                 await displayErrorMessage("You are not whitelisted!");
             }
-            else if (numberToMint > MAX_MINT) {
-                await displayErrorMessage(`Max ${MAX_MINT} mint per wallet!`);
-            }
             else {
-                const signature = await getSignature(await getAddress(), numberToMint);
+                const signature = await getSignature(await getAddress());
 
                 if (signature.includes("Invalid") || signature.includes("Not in whitelist")) {
                     await displayErrorMessage(`Error: Invalid API response: ${signature}`);
                 }
                 else {
-                    const gasLimit = await tejis.estimateGas.claimWhitelist(numberToMint, signature);
+                    const gasLimit = await tejis.estimateGas.claimWhitelist(signature);
                     const newGasLimit = parseInt((gasLimit * 1.2)).toString();
                     
-                    await tejis.claimWhitelist(numberToMint, signature, {gasLimit: newGasLimit}).then( async(tx_) => {
+                    await tejis.claimWhitelist(signature, {gasLimit: newGasLimit}).then( async(tx_) => {
                         await waitForTransaction(tx_);
                     });
                 }
@@ -182,10 +153,7 @@ const mint = async() => {
         }
     }
     catch (error) {
-        if ((error.message).includes("Tejiverse: invalid claim amount")) {
-            await displayErrorMessage(`Error: Max ${MAX_MINT} mint per wallet!`)
-        }
-        else if ((error.message).includes("Tejiverse: invalid signature")) {
+        if ((error.message).includes("Tejiverse: invalid signature")) {
             await displayErrorMessage(`Error: You are not whitelisted!`)
         }
         else if ((error.message).includes("Tejiverse: max supply exceeded")) {
