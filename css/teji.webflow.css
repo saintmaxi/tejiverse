@@ -33,7 +33,7 @@ h1 {
 	font-family: "Block";
 	color: black;
 	-webkit-text-fill-color: #F5CD03; /* Will override color (regardless of order) */
-	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: black;
 	font-size: 3vw !important;
 	line-height: 3vw !important;
